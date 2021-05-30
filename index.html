@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canada Immigration</title>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <meta charset="utf-8" />
+  <body>
+    <h1 style="font-size: 54px;">Canada Immigration Analysis (2015-2020)</h1>
+
+    Filter By Area of Inbound PRs:
+    <select id="region-selector">
+      <option value="All" selected="selected">All</option>
+      <option value="Western Asia">Western Asia</option>
+      <option value="Australia and New Zealand">
+        Australia and New Zealand
+      </option>
+      <option value="Southern Asia">Southern Asia</option>
+      <option value="Eastern Europe">Eastern Europe</option>
+      <option value="Western Europe">Western Europe</option>
+      <option value="Western Africa">Western Africa</option>
+      <option value="Western Europe">Western Europe</option>
+      <option value="South America">South America</option>
+      <option value="Western Africa">Western Africa</option>
+      <option value="Eastern Africa">Eastern Africa</option>
+      <option value="Middle Africa">Middle Africa</option>
+      <option value="South America">South America</option>
+      <option value="Eastern Asia">Eastern Asia</option>
+      <option value="Southern Europe">Southern Europe</option>
+      <option value="Northern Africa">Northern Africa</option>
+      <option value="Central America">Central America</option>
+      <option value="South-Eastern Asia">South-Eastern Asia</option>
+      <option value="Western Asia">Western Asia</option>
+      <option value="Northern Europe">Northern Europe</option>
+    </select>
+
+    <!-- todo: add visualizations -->
+
+    <div id="tooltip"></div>
+    <div id="tooltipBars"></div>
+    <div id="worldmap" class="container"></div>
+    <div id="timeline" class="container"></div>
+    <div class="row align-items-center">
+      <div class="col-sm-2"><p id="value-step"></p></div>
+      <div class="col-sm"><div id="slider-step"></div></div>
+    </div>
+    <h1 style="text-align: left">Map of Canada with Immigration Proportion</h1>
+    <div id="provinces" class="container"></div>
+    <h1 style="text-align: left">Further Breakdown of Individuals</h1>
+    <p>Intended Occupation Type Legend:</p>
+    <ul>
+      <li>O: Other</li>
+      <li>A: Professional jobs that usually call for a degree from a university</li>
+      <li>B: Technical jobs and skilled trades that usually call for a college diploma or training as an apprentice</li>
+      <li>C: Intermediate jobs that usually call for high school and/or job-specific training</li>
+      <li>D: Labour jobs that usually give on-the-job training</li>
+    </ul>
+    <div id="bars" class="container"></div>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="js/bars.js"></script>
+    <script src="js/provinces.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/worldmap.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

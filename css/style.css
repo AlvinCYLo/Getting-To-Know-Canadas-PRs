@@ -1,0 +1,93 @@
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+}
+.tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.province {
+  shape-rendering: crispEdges;
+}
+.province:hover {
+  stroke: #777;
+}
+.province.active {
+  stroke: #333;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.source {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #888;
+}
+.source a {
+  color: #888;
+}
+
+/* Axes */
+.axis line {
+  fill: none;
+  stroke: #8693a0;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 13px;
+  fill: #6b6b6b;
+}
+
+.bars text {
+  font-size: 13px;
+  stroke:rgb(156, 156, 156)
+}
+
+.axis-title {
+  font-size: 13px;
+  fill: rgb(0, 0, 0);
+}
+.x-axis .domain {
+  stroke: #8693a0;
+}
+.y-axis .domain {
+  display: none;
+}
+.x-axis {
+  stroke: rgb(255, 255, 255);
+}
+.chart-area {
+  fill: #e9eff5;
+}
+.chart-line {
+  fill: none;
+  stroke: #517390;
+  stroke-width: 2px;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
